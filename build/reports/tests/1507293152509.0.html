@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style></style>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta content="width=1280,height=720" name="viewport" />
+    <title> Xite </title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <style id="dynamic-style">                        .top-left {                position: fixed;                left: 192px;                top:  109px;                width: 1152px;            }                        .logo {                float: left;                margin-right: 19px;            }                        .logo img {                height:  55px;            }                        .channel {                float: left;            }                        .channel .label {                color: #FFF;                display: block;                font-size:  24px;                line-height:  27px;                height:  27px;                margin-top: 2px;            }                        .channel .name {                color: #FFF;                display: block;                font-size:  24px;                line-height:  27px;                height:  27px;                font-weight: 600;            }                                    .top-right {                position: fixed;                right:  192px;                top:  109px;                width:  768px;            }                        .actions {}                        .action {}                        .action .icon {                float: right;                text-align: center;                color: #FFF;                font-size:  55px;                line-height:  55px;                height:  55px;                width:  55px;                margin-left:  19px;                margin-top: 0;                width: 0;            }                        .action .title {                float: right;                text-align: right;                color: #FFF;                display: block;                font-size:  24px;                line-height:  27px;                margin-top:  2px;            }                                    .center-hints {                position: fixed;                left: 50%;                top: 50%;                width:  438px;                height:  438px;                margin-top: -219px;                margin-left: -219px;                -webkit-border-radius: 50%;                -moz-border-radius: 50%;                border-radius: 50%;                text-align: center;            }                        .center-hints .icon {}                        .center-hints i {                color: #FFF;                font-size:  0px;                line-height: 438px;                opacity: 0;                -webkit-transition: all .3s;                -moz-transition: all .3s;                transition: all .3s;            }                                    .view {                position: fixed;                width: 100%;                height: 100%;            }                        .view&gt;.title-block {                position: fixed;                display: flex;                align-items: center;                justify-content: center;                text-align: center;                color: #FFF;                width:  1344px;                height:  219px;                top:  109px;                left:  288px;                max-width: 1344px;            }                        .view&gt;.title-block&gt;.title-text {                color: #FFF;                font-size:  77px;                line-height:  77px;                font-weight: 600;                text-decoration: underline;            }                        .view&gt;.description {                position: fixed;                text-align: center;                color: #FFF;                width: 100%;                bottom:  109px;                left:  288px;                font-size:  24px;                line-height:  33px;                max-width:  1344px;                font-style: italic;            }                        .view-inner {                text-align: center;                width: 100%;                margin:  22px auto;                max-width:  1344px;                bottom:  22px;            }                        .view-inner .input-line:last-child {                padding-top: 0;            }                        .view-inner.remove-confirm .input-line:last-child {                padding-top: 0;            }                        .auth-select .users {                top:  328px;                width: 768px;                left: 576px;                position: fixed;            }                        .auth-select .users .user {                text-align: center;            }                        .auth-select .users .user .user-name {                color: #FFF;                font-size:  27px;                line-height:  66px;                height:  66px;            }                        .auth-select .users .user .user-name.active {                color: #FFF;                font-size:  27px;                line-height:  66px;                height:  66px;                font-weight: 900;            }                        .auth-select .users .user.focus .user-name {                color: #06fe2b;                font-weight: 900 !important;                background: rgba(255, 255, 255, 0.1);            }                        .login {                top:  328px;                width: 768px;                left: 576px;                position: fixed;                border-top: 2px solid rgba(255, 255, 255, .3);            }                        .input-line {                margin-bottom: 0px;            }                        .input-line input[type="text"],            .input-line input[type="password"] {                width: 100%;                line-height:  72px;                height:  72px;                font-size:  24px;                border: 0px solid #FFF;                border-bottom: 2px solid rgba(255, 255, 255, .3);                background: transparent;                color: #FFF;                font-weight: 400;                text-align: center;            }                        .input-line input[type="text"]:focus,            .input-line input[type="password"]:focus {                color: #06fe2b;                font-weight: 900;            }                        .input-line input[type="text"].error {                color: red;                border: none;                pointer-events: none;            }                        .input-line input[type="button"] {                width: 100%;                margin-top:  11px;                margin-bottom:  11px;                padding: 0;                line-height:  72px;                height:  72px;                font-size:  24px;                border: 0px solid #FFF;                text-align: center;                font-weight: 400;                background-color: rgba(255, 255, 255, 0.3);                color: #FFF;            }                        .input-line input[type="button"]:focus {                background-color: rgba(255, 255, 255, 0.4);                color: #06fe2b;                font-weight: 900;            }                        .input-line input[type="button"]:focus.clear {                font-weight: 900;                color: #06fe2b;            }                        .input-line input[type="button"].clear {                width: 100%;                padding: 0;                line-height:  44px;                height:  44px;                font-size:  24px;                border: 0px solid #FFF;                text-align: center;                font-weight: 400;                background-color: rgba(255, 255, 255, 0);                color: #FFF;                text-transform: capitalize;            }                        .clear.confirm-button {                margin-bottom: 0;            }                        .clear.back {                margin-top:  328px;            }                        .register {                top:  328px;                width:  768px;                left: 576px;                position: fixed;                border-top: 2px solid rgba(255, 255, 255, .3);            }                                    .adult .description {                margin-bottom:  109px;                color: #FFF;            }                        .adult,.disclaimer {                top:  328px;                width: 768px;                left: 576px;                position: fixed;            }                        .adult-text,.disclaimer-text {                color: #FFF;                margin-bottom: 109px;            }                        .channels .carousel {                width: 100%;                top:  137px;            }                        .channels .carousel .item {                position: absolute;                text-align: center;            }                        .channels .carousel .item .carousel-image {                position: relative;                width: 100%;                height: 100%;            }                        .channels .carousel .item .carousel-image img {                position: absolute;                left: 0;                top: 0;                width: 100%;            }                        .channels .carousel .item:nth-child(1) {                top:  438px;                left:  326px;                width: 192px;                height:  219px;                z-index: 1;            }                        .channels .carousel .item:nth-child(2) {                top:  383px;                left:  499px;                width:  288px;                height:  328px;                z-index: 2;            }                        .channels .carousel .item:nth-child(3) {                top:  328px;                left: 768px;                width: 384px;                height:  109px;                z-index: 3;            }                        .channels .carousel .item:nth-child(4) {                top:  383px;                right:  499px;                width:  288px;                height:  328px;                z-index: 2;            }                        .channels .carousel .item:nth-child(5) {                top:  438px;                right:  326px;                width:  192px;                height: 219px;                z-index: 1;            }                        .channels .carousel .item:nth-child(1)&gt;.channel-title,            .channels .carousel .item:nth-child(2)&gt;.channel-title,            .channels .carousel .item:nth-child(4)&gt;.channel-title,            .channels .carousel .item:nth-child(5)&gt;.channel-title {                opacity: 0;            }                        .channel-title {                position: fixed;                display: flex;                align-items: center;                justify-content: center;                text-align: center;                color: #FFF;                height:  219px;                top: 109px;                left:  288px;                left:  768px;                width:  384px;            }                        .channel-title&gt;.title-text {                color: #FFF;                font-size:  77px;                line-height:  77px;                font-weight: 600;                text-decoration: underline;            }                        .channel-subtitle {                position: fixed;                top:  821px;                left: 768px;                text-align: center;                font-size:  24px;                line-height:  33px;                color: #FFF;                width:  384px;                font-style: italic;            }                        .search {                position: fixed;                top: 328px;                width:  1152px;                left: 384px;            }                        .search-counter {                position: fixed;                top: 109px;                width:  192px;                left: 384px;                font-size:  24px;                color: #FFF;                text-align: left;            }            .search-form {}                        .search-form .input-line {                position: relative;            }                        .search-form .input-line input[type="text"] {                border-top: 2px solid rgba(255, 255, 255, .3);                border-bottom: 2px solid rgba(255, 255, 255, .3);                text-align: left;                width: 100%;                line-height:  109px;                height:  109px;                font-size:  33px;                padding-left: 22px;                background: transparent;                color: #FFF;                font-weight: normal;            }                        .search-form .input-line input[type="text"]:focus {                font-weight: bold;                color: #06fe2b;            }                        .search-form .input-line input[type="button"] {                position: absolute;                left:  19px;                top:  11px;                height:  88px;                width:  88px;                background-color: transparent !important;                background-size: cover;                -webkit-transition: all 0.3s;                -moz-transition: all 0.3s;                -ms-transition: all 0.3s;                -o-transition: all 0.3s;                transition: all 0.3s;            }                        .search-form .input-line input[type="button"]:focus {                position: absolute;                left:  19px;                top:  11px;                height:  22px;                width:  22px;            }                        .search-results {                color: #FFF;            }                        .search-results .input-line,            .search-results .input-line:last-child {                height:  88px;                overflow: hidden;                position: relative;                margin: 0 !important;                padding: 0 !important;            }                        .search-results .input-image {                position: absolute;                left: 0;                top: 0;                width:  164px;                height:  88px;            }                        .search-results .input-image img {                max-width: 100%;                width: 100%;            }                        .search-results input[type="button"] {                background: none;                line-height:  88px;                height:  88px;                font-size:  24px;                text-align: left;                padding: 0 0 0  175px;                margin: 0;            }                        .customize {                top:  383px;                width:  1536px;                left:  192px;                position: fixed;            }                        .filters-slider {                height:  274px;                margin-top:  27px;                float: left;                position: relative;                text-align: center;            }                        .filters-slider.active {                height:  328px;                margin-top: 0;            }                        .filters-slider .images {                height:  241px;                overflow: hidden;                position: relative;            }                        .filters-slider.active .images {                height:  328px;                overflow: hidden;            }                        .filters-slider .images img {                position: absolute;                left: 0;                top: 0;                width: 100%;            }                        .filters-slider .slider-title {                position: absolute;                top: -44px;                text-align: center;                width: 100%;                color: #FFF;                font-size:  33px;            }                        .filters-slider .slide-title {                position: absolute;                font-size:  24px;                font-weight: 900;                text-decoration: underline;                text-transform: lowercase;                text-align: center;                width: 100%;                color: #FFF;                font-size:  33px;                line-height:  274px;            }                        .filters-slider.active .slide-title {                line-height:  328px;            }                        .filters-slider i {                position: absolute;                color: #FFF;                font-size:  33px;                width:  109px;                left: 50%;                margin-left:  -55px;                display: none;            }                        .filters-slider.active i {                display: block;            }                        .filters-slider .arrow-up {                top:  55px;            }                        .filters-slider .arrow-down {                bottom:  55px;            }                        .filters-slider.columns-2 {                width: 50%;            }                        .filters-slider.columns-3 {                width: 33.33%;            }                        .filters-slider.columns-4 {                width: 25%;            }                        .filters-slider.columns-5 {                width: 20%;            }                        .customize .item&gt;.title {                position: absolute;                width: 100%;                top: 0;                font-size: 22px;                font-weight: 200;                line-height:  109px;            }                        .exit {                top: 30vh;                width:  768px;                left:  576px;                position: fixed;            }                                    .lime-container {                position: fixed;                bottom: 0;            }                        #limeReturn {                font-size: 20px;            }                        #version {                position: fixed;                color: #FFF;                bottom: 20px;                right: 20px;            }</style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.XITE = {}
+
+        // TODO OPERA RELATED
+        // TODO ALSO KEY BINDINGS
+        if (!!navigator.setResolution) {
+            navigator.setResolution(1920, 1080); //1280,720);
+        };
+
+        if (!!navigator.setWebSecurityEnabled) {
+            navigator.setWebSecurityEnabled(false);
+        };
+
+        window.onerror = function(param1, param2, param3) {
+            window.console.log("Error occured " + param1 + param2 + param3);
+            return true;
+        };
+        //TODO END OPERA RELATED THINGS
+
+        window.writeScreen = function(str) {
+            document.getElementById('logger').style.display = 'block';
+            document.getElementById('logger').innerHTML += str + ' --- ';
+        };
+
+        window.clearScreen = function(str) {
+            document.getElementById('logger').innerHTML = '';
+        };
+    </script>
+    <div>
+        <video onplay="window.XITE.Player.markSongStarted();" onpause="" onerror="" onended="window.XITE.Player.songEnded()" ondurationchange="window.XITE.Player.durationChanged()" id="video" src="http://cds.p5w4g8s5.hwcdn.net/863463/hls_720.mp4"></video>
+
+        <div id="exit-view" class="view hide">
+            <div id="exit-title-block" class="title-block">
+                <div id="exit-title" class="title-text"></div>
+            </div>
+            <div id="exit-description" class="description">
+            </div>
+            <div id="exit-form" class="view-inner exit">
+
+            </div>
+        </div>
+
+        <div id="auth-select-view" class="auth-select view hide">
+            <div id="auth-select-title-block" class="title-block">
+                <div id="auth-select-title" class="title-text"></div>
+            </div>
+            <div id="auth-select-description" class="description">
+            </div>
+            <div id="users-list" class="view-inner users">
+            </div>
+        </div>
+
+        <div id="remove-confirm-view" class="remove-confirm view hide">
+            <div id="remove-confirm-title-block" class="title-block">
+                <div id="remove-confirm-title" class="title-text"></div>
+            </div>
+            <div id="remove-description" class="description">
+            </div>
+            <div id="remove-confirm-form" class="view-inner remove-confirm">
+
+            </div>
+        </div>
+
+        <div id="auth-login-view" class="auth-login view hide">
+            <div id="auth-login-title-block" class="title-block">
+                <div id="auth-login-title" class="title-text"></div>
+            </div>
+            <div id="auth-login-description" class="description">
+            </div>
+            <div id="auth-login-form" class="view-inner login">
+            </div>
+        </div>
+
+        <div id="auth-register-view" class="auth-register view hide">
+            <div id="auth-register-title-block" class="title-block">
+                <div id="auth-register-title" class="title-text"></div>
+            </div>
+            <div id="auth-register-description" class="description">
+            </div>
+            <div id="auth-register-form" class="view-inner register">
+            </div>
+        </div>
+
+        <div id="disclaimer-view" class="disclaimer view hide">
+            <div id="disclaimer-title-block" class="title-block">
+                <div id="disclaimer-title" class="title-text"></div>
+            </div>
+            <div id="disclaimer-description" class="description">
+            </div>
+            <div id="disclaimer-form" class="view-inner disclaimer">
+            </div>
+        </div>
+
+        <div id="adult-view" class="adult view hide">
+            <div id="adult-title-block" class="title-block">
+                <div id="adult-title" class="title-text"></div>
+            </div>
+            <div id="adult-form" class="view-inner adult"></div>
+        </div>
+
+        <div id="auth-reset-view" class="auth-register view hide">
+            <div id="auth-reset-title-block" class="title-block">
+                <div id="auth-reset-title" class="title-text"></div>
+            </div>
+            <div id="auth-reset-description" class="description">
+            </div>
+            <div id="auth-reset-form" class="view-inner register">
+            </div>
+        </div>
+
+        <div id="settings-view" class="settings view hide">
+            <div class="title-block">
+                <div class="title-text"></div>
+            </div>
+            <div id="settings-description" class="description">
+            </div>
+            <div id="settings-inner" class="view-inner">
+            </div>
+        </div>
+
+        <div id="channels-view" class="channels view hide">
+            <div id="channels" class="view-inner channels">
+                <div id="channels-carousel" class="carousel"><div class="item"><div class="carousel-image"><img src="http://static-apollo.xite.com/images/1923975102" /></div><div class="channel-title"><div class="title-text">Sunday Chill</div></div></div><div class="item"><div class="carousel-image"><img src="http://static-apollo.xite.com/images/1742524230" /></div><div class="channel-title"><div class="title-text">Throwback Thursday</div></div></div><div class="item"><div class="carousel-image"><img src="http://static-apollo.xite.com/images/1743805588" /></div><div class="channel-title"><div class="title-text">Party Time</div></div><div class="channel-subtitle"><div class="subtitle-text">Go wild with some of the best party hits!</div></div></div><div class="item"><div class="carousel-image"><img src="http://static-apollo.xite.com/images/1556992296" /></div><div class="channel-title"><div class="title-text">NOW</div></div></div><div class="item"><div class="carousel-image"><img src="images/mychannel_grey.jpg" /></div><div class="channel-title"><div class="title-text">My Channel</div></div></div></div>
+            </div>
+        </div>
+
+        <div id="customize-view" class="customize view hide">
+            <div id="customize-title-block" class="title-block">
+                <div id="customize-title" class="title-text"></div>
+            </div>
+            <div id="customize-description" class="description">
+            </div>
+            <div id="filters" class="view-inner filters">
+            </div>
+        </div>
+
+        <div id="search-view" class="view hide">
+            <div id="search-title-block" class="title-block">
+                <div id="search-title" class="title-text"></div>
+            </div>
+            <div id="search-description" class="description">
+            </div>
+            <div id="search-block" class="view-inner search">
+                <div id="search-counter" class="search-counter"></div>
+                <div id="search-form" class="search-form">
+                    <div class="input-line">
+                        <input type="text" value="" class="" id="search-input" />
+                    </div>
+                </div>
+                <div id="search-results" class="search-results">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="top-overlay-view">
+            <div id="top-left-hint" class="top-left">
+                <div class="logo"><img id="logo-image" src="images/logo.png" /></div>
+                <div id="channel-info" class="channel">
+                    <div id="channel-label" class="label">Channel</div>
+                    <div class="clearfix"></div>
+                    <div id="channel-name" class="name">Party Time</div>
+                </div>
+            </div>
+            <div id="top-right-hint" class="top-right">
+                <div class="actions">
+                    <div class="action">
+                        <div id="channel-action-icon" class="icon"><i aria-hidden="true" class="fa fa-user-secret"></i></div>
+                        <div id="channel-action-text" class="title">
+                            <span id="channel-action-text-top">Press left</span>
+                            <div class="clearfix"></div>
+                            <span class="bold" id="channel-action-text-bottom">to login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center-hints" class="center-hints"></div>
+        </div>
+
+        <div class="hide" id="version">4.1.1</div>
+        <div class=" hide" id="background"></div>
+        <div style="background: #FFF; position: fixed; top: 0; left: 0; width: 100%; padding: 20px;" class="hide" id="logger"></div>
+
+    </div>
+
+    <script src="js/resources/DynamicStyles.js" type="text/javascript"></script>
+
+    <script src="js/resources/Core.js" type="text/javascript"></script>
+    <script src="js/resources/Config.js" type="text/javascript"></script>
+    <script src="js/resources/AppStorage.js" type="text/javascript"></script>
+
+    <!--CORE BLOCK-->
+    <script src="js/resources/Player.js" type="text/javascript"></script>
+    <script src="js/resources/Events.js" type="text/javascript"></script>
+    <script src="js/resources/Views.js" type="text/javascript"></script>
+    <script src="js/resources/Users.js" type="text/javascript"></script>
+    <script src="js/resources/API.js" type="text/javascript"></script>
+    <script src="js/resources/Keylime.js" type="text/javascript"></script>
+
+    <script src="js/resources/Elements.js" type="text/javascript"></script>
+    <script src="js/resources/XiteStart.js" type="text/javascript"></script>
+
+    <!--RESOURCES BLOCK-->
+    <script src="js/resources/XIMDB.js" type="text/javascript"></script>
+    <script src="js/resources/Hint.js" type="text/javascript"></script>
+    <script src="js/resources/ChannelsProvider.js" type="text/javascript"></script>
+    <script src="js/resources/FiltersProvider.js" type="text/javascript"></script>
+    <script src="js/resources/Timer.js" type="text/javascript"></script>
+
+    <!--VIEWS-->
+    <script src="js/views/AdultView.js" type="text/javascript"></script>
+    <script src="js/views/PlayerView.js" type="text/javascript"></script>
+    <script src="js/views/ExitView.js" type="text/javascript"></script>
+    <script src="js/views/AuthSelectView.js" type="text/javascript"></script>
+    <script src="js/views/AuthLoginView.js" type="text/javascript"></script>
+    <script src="js/views/AuthRegisterView.js" type="text/javascript"></script>
+    <script src="js/views/DisclaimerView.js" type="text/javascript"></script>
+    <script src="js/views/AuthResetView.js" type="text/javascript"></script>
+    <script src="js/views/SettingsView.js" type="text/javascript"></script>
+    <script src="js/views/ChannelsView.js" type="text/javascript"></script>
+    <script src="js/views/SearchView.js" type="text/javascript"></script>
+    <script src="js/views/CustomizeView.js" type="text/javascript"></script>
+
+
+
+</body></html>
