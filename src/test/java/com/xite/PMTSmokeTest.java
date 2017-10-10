@@ -14,9 +14,10 @@ public class PMTSmokeTest {
 
     @Before
     public void setUp() {
-        Configuration.timeout = 11000;
+        Configuration.timeout = 6000;
         Configuration.holdBrowserOpen = true;
-        Configuration.collectionsTimeout = 11000;
+        Configuration.collectionsTimeout = 10000;
+        Configuration.browser = "chrome";
     }
 
     public static SelenideElement title = $$(".channel-title> .title-text").findBy(visible);
@@ -30,81 +31,89 @@ public class PMTSmokeTest {
     public static ElementsCollection searchResults = $$(".search-song").filterBy(visible);
     public static ElementsCollection users = $$(".user-name").filterBy(visible);
 
+//    public static Actions actions = new Actions(WebDriverRunner.getWebDriver());
+
+
     @Test
     public void PMTSmokeTest() {
-        open("http://js-app.xite.com//app.html#fix");
-        like();
-        assertHeartIcon();
-        sleep(2000);
-//        rememberSong();
-        skip();
-//        assertSkipIcon();
-//        assertNextSong();
+        visit();
         switchChannelTo("Fiesta Latina");
         assertChannelName("Fiesta Latina");
-        sleep(1500);
+        like();
+        assertHeartIcon();
+////        rememberSong();
+        skip();
+        assertSkipIcon();
+////        assertNextSong();
+
+//        sleep(1500);
 
         //setting up User credentials
-        String username = Helpers.getUniqueString("User");
-        String email = String.format(username + "@xite.com");
-        String date = Helpers.getDate();
-        System.out.println(username + "," + email + "," + date);
+//        String username = Helpers.getUniqueString("User");
+//        String email = String.format(username + "@xite.com");
+//        String date = Helpers.getDate();
+//        System.out.println(username + "," + email + "," + date);
+//
+//        register(username, date, email, TestData.password);
+//        assertPromptingContainsUsername(username);
+//        assertChannelName("NOW");
+//
+//        switchChannelTo("Sunday Chill");
+//        assertChannelName("Sunday Chill");
 
-        register(username, date, email, TestData.password);
-        assertPromptingContainsUsername(username);
-        assertChannelName("NOW");
-
-        switchChannelTo("Sunday Chill");
-        assertChannelName("Sunday Chill");
-
-        like();
-        assertHeartIcon();
-        sleep(2000);
-        skip();
+//        like();
+//        assertHeartIcon();
+//        sleep(2000);
+//        skip();
 //        assertSkipIcon();
 
-        logout(username);
-        assertPromptingContains("to login");
-        assertChannelName("NOW");
+//        logout(username);
+//        assertPromptingContains("to login");
+//        assertChannelName("NOW");
+//
+//        login(username, TestData.password);
+//        assertPromptingContainsUsername(username);
+//        assertChannelName("NOW");
 
-        login(username, TestData.password);
-        assertPromptingContainsUsername(username);
-        assertChannelName("NOW");
+//        switchChannelTo("My Channel");
+//        setupMyChannel("rock", "the 00s", "hot", "energetic");
+//        assertMyChannelIndication(username);
+//        quitMyChannel();
 
-        switchChannelTo("My Channel");
-        setupMyChannel("rock", "the 00s", "hot", "energetic");
-        assertMyChannelIndication(username);
-        quitMyChannel();
-
-        like();
-        assertHeartIcon();
-        sleep(2000);
-        skip();
+//        like();
+//        assertHeartIcon();
+//        sleep(2000);
+//        skip();
 //        assertSkipIcon();
+//
+//        switchChannelTo("Search");
+//        searchQuery(TestData.query);
+//        assertSearchResults(TestData.query);
+//        sleep(500);
+//        startSongFromSearchWithIndex(1);
+//        assertChannelName("Search");
 
-        switchChannelTo("Search");
-        searchQuery(TestData.query);
-        assertSearchResults(TestData.query);
-        sleep(500);
-        startSongFromSearchWithIndex(1);
-        assertChannelName("Search");
-
-        like();
-        assertHeartIcon();
-        sleep(2000);
-        skip();
+//        like();
+//        assertHeartIcon();
+//        sleep(2000);
+//        skip();
 //        assertSkipIcon();
 //        assertNextSong();
-        assertMyChannelIndication(username);
+//        assertMyChannelIndication(username);
 
-        switchChannelTo("My Favourites");
-        assertChannelName("My Favourites");
+//        switchChannelTo("My Favourites");
+//        assertChannelName("My Favourites");
+//
+//        switchToGuest();
+//        assertPromptingContains("to login");
+//        switchToUser(username);
+//        assertPromptingContainsUsername(username);
 
-        switchToGuest();
-        assertPromptingContains("to login");
-        switchToUser(username);
-        assertPromptingContainsUsername(username);
+    }
 
+    private static void visit() {
+        open("http://js-app.xite.com//app.html#fix");
+        $("#logo-image").waitUntil(visible, 6000);
     }
 
     private static void switchToUser(String username) {
@@ -252,11 +261,12 @@ public class PMTSmokeTest {
     }
 
     private void assertHeartIcon() {
-        $("#center-hints .block .icon .fa-heart").should(appear);
+        $("#center-hints").waitUntil(have(cssClass("block")), 3000);
+        $("#center-hints .block .icon .fa-heart").shouldBe(visible);
     }
 
     private void assertSkipIcon() {
-        $("#center-hints .block .icon .fa-step-forward").should(appear);
+        $("#center-hints .block .icon .fa-step-forward").shouldBe(visible);
     }
 
     private static void like() {
