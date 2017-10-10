@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2208c7-5248-4cac-9285-b8764a38e2ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/xite/PMTSmokeTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/xite/PMTSmokeTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xite/PMTSmokeTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xite/PMTSmokeTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            <state relative-caret-position="195">
+              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -579,9 +577,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PMTSmokeTest - 2017.10.10 at 23h 21m 53s.xml">
-      <configuration name="PMTSmokeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PMTSmokeTest - 2017.10.10 at 23h 27m 05s.xml">
       <configuration name="PMTSmokeTest" configurationId="JUnit" />
     </history-entry>
@@ -606,8 +601,11 @@
     <history-entry file="PMTSmokeTest - 2017.10.10 at 23h 49m 25s.xml">
       <configuration name="PMTSmokeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PMTSmokeTest_PMTSmokeTest - 2017.10.10 at 23h 23m 37s.xml">
-      <configuration name="PMTSmokeTest.PMTSmokeTest" configurationId="JUnit" />
+    <history-entry file="PMTSmokeTest - 2017.10.10 at 23h 58m 58s.xml">
+      <configuration name="PMTSmokeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PMTSmokeTest - 2017.10.10 at 23h 59m 58s.xml">
+      <configuration name="PMTSmokeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -903,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="195">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
