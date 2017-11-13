@@ -112,7 +112,7 @@ public class PMTSmokeTest {
     }
 
     private static void visit() {
-        open("http://js-app.xite.com//app.html#fix");
+        open("http://PMTurl");
         $("#logo-image").waitUntil(visible, 6000);
     }
 
